@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUAVANJQaHg0I=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUAUtkMQWqIVg=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUAUtkMQWrTq0=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUAUt8GwWxcHk=" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUAUvLvgXCsiI=" name="Inbox" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUx/lAXplR8=" name="Composed" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAU0QRQYQEUM=" name="Sent" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAU6jDAZvHoU=" visibility="public" xmi:type="uml:FinalState"/>
+				<transition xmi:id="AAAAAAFUAU3BbAY2GWg=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUt8GwWxcHk=" target="AAAAAAFUAUvLvgXCsiI=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAU3sagZHn0k=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUvLvgXCsiI=" target="AAAAAAFUAUx/lAXplR8=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAU4cCQZZCXA=" name="Compose Message" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAVANJQaIQXw=" xmi:type="uml:Trigger" name="Compose Message" event="AAAAAAFUAU4cCQZZCXA="/>
+					<trigger xmi:id="AAAAAAFUAU4cCQZZCXA=" name="Compose Message" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAU5IsQZbPtc=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUx/lAXplR8=" target="AAAAAAFUAU0QRQYQEUM=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAU5+yAZt7gk=" name="Send Message" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAVANJQaJWJU=" xmi:type="uml:Trigger" name="Send Message" event="AAAAAAFUAU5+yAZt7gk="/>
+					<trigger xmi:id="AAAAAAFUAU5+yAZt7gk=" name="Send Message" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAU643wZ0jqw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAU0QRQYQEUM=" target="AAAAAAFUAU6jDAZvHoU=" kind="external"/>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

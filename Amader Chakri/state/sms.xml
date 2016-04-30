@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUYTpzrU00Rtk=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUYTiU5ku6/eE=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUYTiU5ku7oG4=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUYTigZkvBZlk=" name="start" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUYTi25UvT6do=" name="idle" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYTjHyEv5T20=" name="sign up" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYTjcZUwfgIc=" name="view" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYTj/F0xF6Bo=" name="send sms" visibility="public" xmi:type="uml:State"/>
+				<transition xmi:id="AAAAAAFUYTkbzkxrdR4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYTigZkvBZlk=" target="AAAAAAFUYTi25UvT6do=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYTkr2Ux88vs=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYTi25UvT6do=" target="AAAAAAFUYTjHyEv5T20=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYTk5bUyNiC4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYTjHyEv5T20=" target="AAAAAAFUYTi25UvT6do=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYTlILEyeqbQ=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYTi25UvT6do=" target="AAAAAAFUYTjcZUwfgIc=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYTlWeEyvZ80=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYTjcZUwfgIc=" target="AAAAAAFUYTi25UvT6do=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYTlnhEzArKY=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYTi25UvT6do=" target="AAAAAAFUYTj/F0xF6Bo=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYTl2W0zRaAM=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYTj/F0xF6Bo=" target="AAAAAAFUYTi25UvT6do=" kind="external"/>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

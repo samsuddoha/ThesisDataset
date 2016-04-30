@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUYUlRiT38d8A=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUYUZK9zzkn6A=" name="Collaboration1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Collaboration">
+			<ownedMember xmi:id="AAAAAAFUYUZK9zzl9l0=" name="Interaction1" visibility="public" isReentrant="true" xmi:type="uml:Interaction">
+				<lifeline xmi:id="AAAAAAFUYUaP4Dz0+Nw=" name="applicant" visibility="public" xmi:type="uml:Lifeline" represents="AAAAAAFUYUaP4DzzJSc="/>
+				<lifeline xmi:id="AAAAAAFUYUal4T0UB80=" name="system admin" visibility="public" xmi:type="uml:Lifeline" represents="AAAAAAFUYUal4T0TpdE="/>
+				<lifeline xmi:id="AAAAAAFUYUa/tz009qY=" name="system" visibility="public" xmi:type="uml:Lifeline" represents="AAAAAAFUYUa/tz0zcM4="/>
+				<lifeline xmi:id="AAAAAAFUYUbRnj1U+fE=" name="referenced person" visibility="public" xmi:type="uml:Lifeline" represents="AAAAAAFUYUbRnj1TGNY="/>
+				<message xmi:id="AAAAAAFUYUcEyj1zYC8=" name="download attested file" visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent="AAAAAAFUYUlRjD3+8r8=" sendEvent="AAAAAAFUYUlRjD39utw="/>
+				<message xmi:id="AAAAAAFUYUdoJT2JSGM=" name="upload attested file and notify system admin" visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent="AAAAAAFUYUlRjD4AgCc=" sendEvent="AAAAAAFUYUlRjD3/J3g="/>
+				<message xmi:id="AAAAAAFUYUfmMD2gxq4=" name="ask for verification processing" visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent="AAAAAAFUYUlRjD4CEYM=" sendEvent="AAAAAAFUYUlRjD4Basg="/>
+				<message xmi:id="AAAAAAFUYUg7Lj235qw=" name="verification confirmed" visibility="public" xmi:type="uml:Message" messageSort="reply" messageKind="complete" receiveEvent="AAAAAAFUYUlRjD4EQKs=" sendEvent="AAAAAAFUYUlRjD4DFWk="/>
+				<message xmi:id="AAAAAAFUYUhqtz3NI7c=" name="account verified" visibility="public" xmi:type="uml:Message" messageSort="reply" messageKind="complete" receiveEvent="AAAAAAFUYUlRjT4Gg+o=" sendEvent="AAAAAAFUYUlRjT4F88M="/>
+				<message xmi:id="AAAAAAFUYUkTtj3mi0s=" name="send email" visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent="AAAAAAFUYUlRjT4IDck=" sendEvent="AAAAAAFUYUlRjT4HJaE="/>
+				<fragment xmi:id="AAAAAAFUYUlRjD39utw=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUaP4Dz0+Nw="/>
+				<fragment xmi:id="AAAAAAFUYUlRjD3+8r8=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUaP4Dz0+Nw="/>
+				<fragment xmi:id="AAAAAAFUYUlRjD3/J3g=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUaP4Dz0+Nw="/>
+				<fragment xmi:id="AAAAAAFUYUlRjD4AgCc=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUal4T0UB80="/>
+				<fragment xmi:id="AAAAAAFUYUlRjD4Basg=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUal4T0UB80="/>
+				<fragment xmi:id="AAAAAAFUYUlRjD4CEYM=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUa/tz009qY="/>
+				<fragment xmi:id="AAAAAAFUYUlRjD4DFWk=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUa/tz009qY="/>
+				<fragment xmi:id="AAAAAAFUYUlRjD4EQKs=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUal4T0UB80="/>
+				<fragment xmi:id="AAAAAAFUYUlRjT4F88M=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUal4T0UB80="/>
+				<fragment xmi:id="AAAAAAFUYUlRjT4Gg+o=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUaP4Dz0+Nw="/>
+				<fragment xmi:id="AAAAAAFUYUlRjT4HJaE=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUaP4Dz0+Nw="/>
+				<fragment xmi:id="AAAAAAFUYUlRjT4IDck=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYUbRnj1U+fE="/>
+			</ownedMember>
+			<ownedAttribute xmi:id="AAAAAAFUYUaP4DzzJSc=" name="Role1" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+			<ownedAttribute xmi:id="AAAAAAFUYUal4T0TpdE=" name="Role2" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+			<ownedAttribute xmi:id="AAAAAAFUYUa/tz0zcM4=" name="Role3" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+			<ownedAttribute xmi:id="AAAAAAFUYUbRnj1TGNY=" name="Role4" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

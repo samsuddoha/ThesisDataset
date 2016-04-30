@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUYTAsDkcRmuc=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUYSPLmSu67SQ=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUYSPLmiu7Dl4=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUYSR3pSvBmbw=" name="start" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUYSTAuyvTuPE=" name="send code" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSTw6Sv5m70=" name="log in" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSadbSxGSMc=" name="validate" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSbnGCyBs4o=" name="search" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYScBISynKKM=" name="view own post" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYScdKizNQXg=" name="vote" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSdk4CzzENo=" name="idle" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSekQi0bugk=" name="forum" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSe8EC1B4ac=" name="comment" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSfQPS1nCPE=" name="post" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSgWhy2NYRw=" name="update info" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSgrnC2zs3s=" name="log out" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYShG+i3ZbWk=" name="selecting won account status" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUYSh/yS3/7dY=" visibility="public" xmi:type="uml:FinalState"/>
+				<subvertex xmi:id="AAAAAAFUYS+v2EbJH2c=" name="view notification" visibility="public" xmi:type="uml:State"/>
+				<transition xmi:id="AAAAAAFUYSU6fSwftGw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSR3pSvBmbw=" target="AAAAAAFUYSTAuyvTuPE=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSXaEywzaA0=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSR3pSvBmbw=" target="AAAAAAFUYSTw6Sv5m70=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSibZi4E4u0=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSgrnC2zs3s=" target="AAAAAAFUYSh/yS3/7dY=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSi8By4V3rY=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSdk4CzzENo=" target="AAAAAAFUYSgrnC2zs3s=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSjXfy4mar4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSdk4CzzENo=" target="AAAAAAFUYSgWhy2NYRw=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSjowy43YwI=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSgWhy2NYRw=" target="AAAAAAFUYSdk4CzzENo=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSkWOS5I04Y=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSdk4CzzENo=" target="AAAAAAFUYShG+i3ZbWk=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSkpPi5ZxI4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYShG+i3ZbWk=" target="AAAAAAFUYSdk4CzzENo=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSmZzy5qI7s=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSdk4CzzENo=" target="AAAAAAFUYSekQi0bugk=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSmvgC57uo4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSekQi0bugk=" target="AAAAAAFUYSdk4CzzENo=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSnI2C6MkSU=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSekQi0bugk=" target="AAAAAAFUYSe8EC1B4ac=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSnasi6d0Uw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSe8EC1B4ac=" target="AAAAAAFUYSekQi0bugk=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSn0TC6ueQ4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSekQi0bugk=" target="AAAAAAFUYSfQPS1nCPE=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSoHJS6/wdE=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSfQPS1nCPE=" target="AAAAAAFUYSekQi0bugk=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSo2FC7Q+dg=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSTw6Sv5m70=" target="AAAAAAFUYSdk4CzzENo=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSqEjy8TGAg=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSbnGCyBs4o=" target="AAAAAAFUYSdk4CzzENo=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSqUuS8kypM=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSdk4CzzENo=" target="AAAAAAFUYSbnGCyBs4o=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSrSLy81ERc=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSTAuyvTuPE=" target="AAAAAAFUYSadbSxGSMc=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSruEi9GiIs=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYScBISynKKM=" target="AAAAAAFUYSekQi0bugk=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSsmZy9XmgE=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSekQi0bugk=" target="AAAAAAFUYScBISynKKM=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYSs5ji9oeZo=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSekQi0bugk=" target="AAAAAAFUYScdKizNQXg=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYStQKi957L0=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYScdKizNQXg=" target="AAAAAAFUYSekQi0bugk=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYS/azEbvxlY=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYSdk4CzzENo=" target="AAAAAAFUYS+v2EbJH2c=" kind="external"/>
+				<transition xmi:id="AAAAAAFUYS/wnEcAXtA=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUYS+v2EbJH2c=" target="AAAAAAFUYSdk4CzzENo=" kind="external"/>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

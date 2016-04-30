@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUAUsDlgWktGw=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUAUcEbwTuJ28=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUAUcEbwTv0t4=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUAUcvkwT1K7w=" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUAUeD9gUG3jA=" name="NewsViewed" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUfGWQUs7JQ=" name="ProfileViewed" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUkbggV8ZT0=" visibility="public" xmi:type="uml:FinalState"/>
+				<transition xmi:id="AAAAAAFUAUgu7gVUZKw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUcvkwT1K7w=" target="AAAAAAFUAUeD9gUG3jA=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUh0ZQVmEqo=" name="News Viewing Req." visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUsDlgWlchw=" xmi:type="uml:Trigger" name="News Viewing Req." event="AAAAAAFUAUh0ZQVmEqo="/>
+					<trigger xmi:id="AAAAAAFUAUh0ZQVmEqo=" name="News Viewing Req." visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUjI9wVo388=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUeD9gUG3jA=" target="AAAAAAFUAUfGWQUs7JQ=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUkDRAV6rVY=" name="Search Profile" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUsDlgWmMuo=" xmi:type="uml:Trigger" name="Search Profile" event="AAAAAAFUAUkDRAV6rVY="/>
+					<trigger xmi:id="AAAAAAFUAUkDRAV6rVY=" name="Search Profile" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUk5YAWB+Jo=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUfGWQUs7JQ=" target="AAAAAAFUAUkbggV8ZT0=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUlvuwWSHUA=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUeD9gUG3jA=" target="AAAAAAFUAUkbggV8ZT0=" kind="external"/>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

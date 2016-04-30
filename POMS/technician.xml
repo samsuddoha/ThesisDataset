@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUAURIGgqLj9k=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUAT+4WwiaO58=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUAT+4WwibxTI=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUAUBB7wihY6w=" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUAUBdkgiy7QY=" name="Idle" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUC4tgjpgs8=" name="SignIn" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUEstQkjClc=" name="NotificationViewed" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUGqwQlddXs=" name="DeviceChecked" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUInIQmXeSY=" name="SolvedProblem" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUKYdwnRgQM=" name="FeedbackGiven" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUMZBgoLTg0=" name="SignOut" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUN1/ApZIlk=" visibility="public" xmi:type="uml:FinalState"/>
+				<transition xmi:id="AAAAAAFUAUCO9AjYt8I=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUBB7wihY6w=" target="AAAAAAFUAUBdkgiy7QY=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUDcEgkPbEc=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUBdkgiy7QY=" target="AAAAAAFUAUC4tgjpgs8=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUEFQwkheqo=" name="Input password" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAURIKQqM3JQ=" xmi:type="uml:Trigger" name="Input password" event="AAAAAAFUAUEFQwkheqo="/>
+					<trigger xmi:id="AAAAAAFUAUEFQwkheqo=" name="Input password" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUFwCQlJn+Y=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUC4tgjpgs8=" target="AAAAAAFUAUEstQkjClc=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUGTWwlbad4=" name="View notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAURIKQqNyC8=" xmi:type="uml:Trigger" name="View notification" event="AAAAAAFUAUGTWwlbad4="/>
+					<trigger xmi:id="AAAAAAFUAUGTWwlbad4=" name="View notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUHgUwmDtYw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUEstQkjClc=" target="AAAAAAFUAUGqwQlddXs=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUH5wAmV42M=" name="Check device" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAURIKQqOIE8=" xmi:type="uml:Trigger" name="Check device" event="AAAAAAFUAUH5wAmV42M="/>
+					<trigger xmi:id="AAAAAAFUAUH5wAmV42M=" name="Check device" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUJV4wm9skM=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUGqwQlddXs=" target="AAAAAAFUAUInIQmXeSY=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUJ0gQnPGSU=" name="problem solve" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAURIKQqPXsA=" xmi:type="uml:Trigger" name="problem solve" event="AAAAAAFUAUJ0gQnPGSU="/>
+					<trigger xmi:id="AAAAAAFUAUJ0gQnPGSU=" name="problem solve" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAULCAQn3Hpk=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUInIQmXeSY=" target="AAAAAAFUAUKYdwnRgQM=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAULcVgoJdvw=" name="give feedback" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAURIKQqQL8I=" xmi:type="uml:Trigger" name="give feedback" event="AAAAAAFUAULcVgoJdvw="/>
+					<trigger xmi:id="AAAAAAFUAULcVgoJdvw=" name="give feedback" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUM6QwoxznI=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUKYdwnRgQM=" target="AAAAAAFUAUMZBgoLTg0=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUNJCwpDp0k=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAURIKQqRAO0=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUNJCwpDp0k="/>
+					<trigger xmi:id="AAAAAAFUAUNJCwpDp0k=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUNWgQpFCBU=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUC4tgjpgs8=" target="AAAAAAFUAUMZBgoLTg0=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUNlnwpXpaE=" name="Exit" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAURIKQqSIh4=" xmi:type="uml:Trigger" name="Exit" event="AAAAAAFUAUNlnwpXpaE="/>
+					<trigger xmi:id="AAAAAAFUAUNlnwpXpaE=" name="Exit" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUOIpQpelo0=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUMZBgoLTg0=" target="AAAAAAFUAUN1/ApZIlk=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUOy0gp3Hfk=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUMZBgoLTg0=" target="AAAAAAFUAUN1/ApZIlk=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUO/VgqJzms=" name="End" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAURIKQqTP6A=" xmi:type="uml:Trigger" name="End" event="AAAAAAFUAUO/VgqJzms="/>
+					<trigger xmi:id="AAAAAAFUAUO/VgqJzms=" name="End" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

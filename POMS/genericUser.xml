@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUATrPLwc7pcM=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUATPPgAUBLI0=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUATPPgAUCON4=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUATRJkAUIlHA=" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUATRxSQUZMOE=" name="Idle" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATTkvAVQtRQ=" name="SignIN" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATWUCgWKs2Y=" name="ComplainedLodged" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATaWSwXFv8I=" name="NotificationVied" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATcIqgX/iDM=" name="FeedbackGiven" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATeObAY5GNs=" name="CompelentRecordUpdated" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAThIzgZzL74=" name="signOut" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATipkQatHSI=" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<transition xmi:id="AAAAAAFUATS5mAU/ljo=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATRJkAUIlHA=" target="AAAAAAFUATRxSQUZMOE=" kind="external"/>
+				<transition xmi:id="AAAAAAFUATUcjwV2eik=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATRxSQUZMOE=" target="AAAAAAFUATTkvAVQtRQ=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATVLQQWIcOs=" name="Input Password" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgc8/7U=" xmi:type="uml:Trigger" name="Input Password" event="AAAAAAFUATVLQQWIcOs="/>
+					<trigger xmi:id="AAAAAAFUATVLQQWIcOs=" name="Input Password" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATZBIQWxJEo=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATTkvAVQtRQ=" target="AAAAAAFUATWUCgWKs2Y=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATZi5AXDNB0=" name="Lodge Complaint" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgc9RMw=" xmi:type="uml:Trigger" name="Lodge Complaint" event="AAAAAAFUATZi5AXDNB0="/>
+					<trigger xmi:id="AAAAAAFUATZi5AXDNB0=" name="Lodge Complaint" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATbJBAXrKJk=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATTkvAVQtRQ=" target="AAAAAAFUATaWSwXFv8I=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATbxXwX9N+E=" name="View notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgc+7Jg=" xmi:type="uml:Trigger" name="View notification" event="AAAAAAFUATbxXwX9N+E="/>
+					<trigger xmi:id="AAAAAAFUATbxXwX9N+E=" name="View notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATdIwAYlcD4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATTkvAVQtRQ=" target="AAAAAAFUATcIqgX/iDM=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATdjmAY35rc=" name="Give feedback" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgc/4MY=" xmi:type="uml:Trigger" name="Give feedback" event="AAAAAAFUATdjmAY35rc="/>
+					<trigger xmi:id="AAAAAAFUATdjmAY35rc=" name="Give feedback" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATfsmgZff8M=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATTkvAVQtRQ=" target="AAAAAAFUATeObAY5GNs=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATggzwZxPA0=" name="Update complained record" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgdAVv0=" xmi:type="uml:Trigger" name="Update complained record" event="AAAAAAFUATggzwZxPA0="/>
+					<trigger xmi:id="AAAAAAFUATggzwZxPA0=" name="Update complained record" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAThwswaZ9eQ=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATTkvAVQtRQ=" target="AAAAAAFUAThIzgZzL74=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATh9rgar4rY=" name="Exit" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgdBX4k=" xmi:type="uml:Trigger" name="Exit" event="AAAAAAFUATh9rgar4rY="/>
+					<trigger xmi:id="AAAAAAFUATh9rgar4rY=" name="Exit" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATjGZwa+uEE=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAThIzgZzL74=" target="AAAAAAFUAThIzgZzL74=" kind="external"/>
+				<transition xmi:id="AAAAAAFUATjh7gbXavk=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAThIzgZzL74=" target="AAAAAAFUATipkQatHSI=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATjuxgbpvMs=" name="End" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgdCSio=" xmi:type="uml:Trigger" name="End" event="AAAAAAFUATjuxgbpvMs="/>
+					<trigger xmi:id="AAAAAAFUATjuxgbpvMs=" name="End" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATkWwgbr8r4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATeObAY5GNs=" target="AAAAAAFUAThIzgZzL74=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATkpdQb9O/E=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgdD2o0=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUATkpdQb9O/E="/>
+					<trigger xmi:id="AAAAAAFUATkpdQb9O/E=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATllAwb/wFs=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATcIqgX/iDM=" target="AAAAAAFUAThIzgZzL74=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATl1YAcRgEA=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgdE/xo=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUATl1YAcRgEA="/>
+					<trigger xmi:id="AAAAAAFUATl1YAcRgEA=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATmOfgcT8a4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATaWSwXFv8I=" target="AAAAAAFUAThIzgZzL74=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATmdRAclh08=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgdFG8k=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUATmdRAclh08="/>
+					<trigger xmi:id="AAAAAAFUATmdRAclh08=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATnP/QcnqR8=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATWUCgWKs2Y=" target="AAAAAAFUAThIzgZzL74=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATnfQAc5kH4=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUATrPPgdGjUo=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUATnfQAc5kH4="/>
+					<trigger xmi:id="AAAAAAFUATnfQAc5kH4=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

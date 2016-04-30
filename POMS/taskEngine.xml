@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUAUv/gg1Wo04=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUAUTLtAqXtiw=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUAUTLtAqYcz0=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUAUULFwqeqPA=" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUAUUhYwqvqmg=" name="Idle" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUVydgrmzF8=" name="UpdatedComplaiedRecordSaved" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUaDRws0+Uk=" name="GeneratedReportSaved" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUdOJQuCIb4=" name="UodatedRecordSaved" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUgPeAvQvQI=" name="NotificationSent" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUidywweiXI=" name="ComplaintSaved" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUkxcQxs7Vo=" name="ProblemSolvedSave" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUoNvwy6Oag=" name="CheckedDeviceSaved" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUqWSw0I82E=" name="RecoedSaved" visibility="public" xmi:type="uml:State"/>
+				<transition xmi:id="AAAAAAFUAUVKYQrV/AM=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUULFwqeqPA=" target="AAAAAAFUAUUhYwqvqmg=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUXUfgsMT1Y=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUVydgrmzF8=" target="AAAAAAFUAUUhYwqvqmg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUXh+wseTh4=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1Xp3o=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUXh+wseTh4="/>
+					<trigger xmi:id="AAAAAAFUAUXh+wseTh4=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUYIrgsgD4s=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUUhYwqvqmg=" target="AAAAAAFUAUVydgrmzF8=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUY9vAsyUEg=" name="Save updated complaint record" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1YeMI=" xmi:type="uml:Trigger" name="Save updated complaint record" event="AAAAAAFUAUY9vAsyUEg="/>
+					<trigger xmi:id="AAAAAAFUAUY9vAsyUEg=" name="Save updated complaint record" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUbZiAtaEjU=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUUhYwqvqmg=" target="AAAAAAFUAUaDRws0+Uk=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUcJvgtsy8M=" name="Save generated report" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1ZvjQ=" xmi:type="uml:Trigger" name="Save generated report" event="AAAAAAFUAUcJvgtsy8M="/>
+					<trigger xmi:id="AAAAAAFUAUcJvgtsy8M=" name="Save generated report" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUcWoAtuoyA=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUaDRws0+Uk=" target="AAAAAAFUAUUhYwqvqmg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUcnIguAtWc=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1an18=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUcnIguAtWc="/>
+					<trigger xmi:id="AAAAAAFUAUcnIguAtWc=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUeGZwuoq+A=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUUhYwqvqmg=" target="AAAAAAFUAUdOJQuCIb4=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUexsQu6a5I=" name="Save updated record" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1b8Qc=" xmi:type="uml:Trigger" name="Save updated record" event="AAAAAAFUAUexsQu6a5I="/>
+					<trigger xmi:id="AAAAAAFUAUexsQu6a5I=" name="Save updated record" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUe/wwu8KMo=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUdOJQuCIb4=" target="AAAAAAFUAUUhYwqvqmg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUfQwgvO7sY=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1ccRY=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUfQwgvO7sY="/>
+					<trigger xmi:id="AAAAAAFUAUfQwgvO7sY=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUg9PAv2IEw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUUhYwqvqmg=" target="AAAAAAFUAUgPeAvQvQI=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUhX4AwIqfY=" name="Send notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1dNoo=" xmi:type="uml:Trigger" name="Send notification" event="AAAAAAFUAUhX4AwIqfY="/>
+					<trigger xmi:id="AAAAAAFUAUhX4AwIqfY=" name="Send notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUhpBwwKo5k=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUgPeAvQvQI=" target="AAAAAAFUAUUhYwqvqmg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUh2uwwcu8s=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1eD9I=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUh2uwwcu8s="/>
+					<trigger xmi:id="AAAAAAFUAUh2uwwcu8s=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUjNGwxEM1k=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUUhYwqvqmg=" target="AAAAAAFUAUidywweiXI=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUjjdwxWNnE=" name="Save complaint" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1fS8c=" xmi:type="uml:Trigger" name="Save complaint" event="AAAAAAFUAUjjdwxWNnE="/>
+					<trigger xmi:id="AAAAAAFUAUjjdwxWNnE=" name="Save complaint" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUjwdAxY7lw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUidywweiXI=" target="AAAAAAFUAUUhYwqvqmg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUj8MgxqdPc=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1g69A=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUj8MgxqdPc="/>
+					<trigger xmi:id="AAAAAAFUAUj8MgxqdPc=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUlsIgySkhI=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUUhYwqvqmg=" target="AAAAAAFUAUkxcQxs7Vo=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUm+jQykwYY=" name="Save solved problem" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1hHvA=" xmi:type="uml:Trigger" name="Save solved problem" event="AAAAAAFUAUm+jQykwYY="/>
+					<trigger xmi:id="AAAAAAFUAUm+jQykwYY=" name="Save solved problem" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUnORgymwsM=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUkxcQxs7Vo=" target="AAAAAAFUAUUhYwqvqmg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUnazQy4Zyo=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1iirA=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUnazQy4Zyo="/>
+					<trigger xmi:id="AAAAAAFUAUnazQy4Zyo=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUo66QzgFFg=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUUhYwqvqmg=" target="AAAAAAFUAUoNvwy6Oag=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUpYIgzysCc=" name="Save checked device" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1jZVA=" xmi:type="uml:Trigger" name="Save checked device" event="AAAAAAFUAUpYIgzysCc="/>
+					<trigger xmi:id="AAAAAAFUAUpYIgzysCc=" name="Save checked device" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUpj6Az0nb4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUoNvwy6Oag=" target="AAAAAAFUAUUhYwqvqmg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUpzYA0GEt8=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1kufs=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUpzYA0GEt8="/>
+					<trigger xmi:id="AAAAAAFUAUpzYA0GEt8=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUrFAg0uK4w=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUUhYwqvqmg=" target="AAAAAAFUAUqWSw0I82E=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUrnSw1AbW4=" name="Save record" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1lMVo=" xmi:type="uml:Trigger" name="Save record" event="AAAAAAFUAUrnSw1AbW4="/>
+					<trigger xmi:id="AAAAAAFUAUrnSw1AbW4=" name="Save record" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUr9sA1CYcE=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUqWSw0I82E=" target="AAAAAAFUAUUhYwqvqmg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUsNSQ1UQqM=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUv/kg1m3PU=" xmi:type="uml:Trigger" name="Done" event="AAAAAAFUAUsNSQ1UQqM="/>
+					<trigger xmi:id="AAAAAAFUAUsNSQ1UQqM=" name="Done" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

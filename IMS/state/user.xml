@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUAT4fW5yEtT0=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUATF2VJc4eLY=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUATF2VJc5S1g=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUATIQCpc/A9E=" name="start" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUATJxiZdRVWw=" name="System Ready" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATMyWpeiu08=" name="Reading" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATONzZfInHo=" name="Reading" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATOsX5fu5Fs=" name="Reading" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATQEYpgUNvw=" name="State1" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATQVjZhK83o=" name="State2" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATWQAZizN2k=" name="Reading" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATWcIpjpiRw=" name="Reading" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATWispkf6DY=" name="Reading" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATZuCpm3g7A=" name="Validating information" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATaOq5nu/kM=" name="Comparing" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATad65ok/Qs=" name="Sending email" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATcAt5pbzBQ=" name="State5" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATc0YpqSRDA=" name="State3" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATdeOJrJrTY=" name="State6" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATh6ipsm5E4=" name="Signed in" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATjt1ZtdcQ0=" name="Editing" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATk40puUJhk=" name="Validating" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUATnOYpvLDQE=" visibility="public" xmi:type="uml:FinalState"/>
+				<transition xmi:id="AAAAAAFUATQFTJg5Mg4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATOsX5fu5Fs=" target="AAAAAAFUATQEYpgUNvw=" kind="external"/>
+				<transition xmi:id="AAAAAAFUATQWV5hvlqc=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATQVjZhK83o=" target="AAAAAAFUATOsX5fu5Fs=" kind="external"/>
+				<transition xmi:id="AAAAAAFUATTjzZifAkY=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATIQCpc/A9E=" target="AAAAAAFUATJxiZdRVWw=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATUCY5ixmsw=" name="Turn on system" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yF0I0=" xmi:type="uml:Trigger" name="Turn on system" event="AAAAAAFUATUCY5ixmsw="/>
+					<trigger xmi:id="AAAAAAFUATUCY5ixmsw=" name="Turn on system" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATWQ25jYMtM=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATJxiZdRVWw=" target="AAAAAAFUATWQAZizN2k=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATuzpZxbrmc=" name="forget username password" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yGUvU=" xmi:type="uml:Trigger" name="forget username password" event="AAAAAAFUATuzpZxbrmc="/>
+					<trigger xmi:id="AAAAAAFUATuzpZxbrmc=" name="forget username password" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATWc7pkOWHk=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATJxiZdRVWw=" target="AAAAAAFUATWcIpjpiRw=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATvd4Jxeo54=" name="enter info for sign up" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yHm/s=" xmi:type="uml:Trigger" name="enter info for sign up" event="AAAAAAFUATvd4Jxeo54="/>
+					<trigger xmi:id="AAAAAAFUATvd4Jxeo54=" name="enter info for sign up" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATWjrplE4og=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATJxiZdRVWw=" target="AAAAAAFUATWispkf6DY=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATwOZZxhYUs=" name="enter username password" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yIzjw=" xmi:type="uml:Trigger" name="enter username password" event="AAAAAAFUATwOZZxhYUs="/>
+					<trigger xmi:id="AAAAAAFUATwOZZxhYUs=" name="enter username password" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATZvI5ncKGw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATWcIpjpiRw=" target="AAAAAAFUATZuCpm3g7A=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATxa5Zxn/B4=" name="info entered" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yJ9Dk=" xmi:type="uml:Trigger" name="info entered" event="AAAAAAFUATxa5Zxn/B4="/>
+					<trigger xmi:id="AAAAAAFUATxa5Zxn/B4=" name="info entered" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATaPo5oTO7c=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATWispkf6DY=" target="AAAAAAFUATaOq5nu/kM=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATyES5xqUpc=" name="username and password entered" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yKkhk=" xmi:type="uml:Trigger" name="username and password entered" event="AAAAAAFUATyES5xqUpc="/>
+					<trigger xmi:id="AAAAAAFUATyES5xqUpc=" name="username and password entered" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATafG5pJ5lc=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATWQAZizN2k=" target="AAAAAAFUATad65ok/Qs=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATw2IpxkRMA=" name="email entered" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yLjpE=" xmi:type="uml:Trigger" name="email entered" event="AAAAAAFUATw2IpxkRMA="/>
+					<trigger xmi:id="AAAAAAFUATw2IpxkRMA=" name="email entered" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATcB3pqAkWM=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATad65ok/Qs=" target="AAAAAAFUATcAt5pbzBQ=" kind="external"/>
+				<transition xmi:id="AAAAAAFUATc1Xpq3RG4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATZuCpm3g7A=" target="AAAAAAFUATc0YpqSRDA=" kind="external"/>
+				<transition xmi:id="AAAAAAFUATdfOpruwYU=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATZuCpm3g7A=" target="AAAAAAFUATdeOJrJrTY=" kind="external"/>
+				<transition xmi:id="AAAAAAFUATh7d5tLTqY=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATaOq5nu/kM=" target="AAAAAAFUATh6ipsm5E4=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATzt/5xttN0=" name="sign in complete" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yMZK0=" xmi:type="uml:Trigger" name="sign in complete" event="AAAAAAFUATzt/5xttN0="/>
+					<trigger xmi:id="AAAAAAFUATzt/5xttN0=" name="sign in complete" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATju4ZuC008=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATh6ipsm5E4=" target="AAAAAAFUATjt1ZtdcQ0=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAT04CZxwo24=" name="edit profile" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yNSE0=" xmi:type="uml:Trigger" name="edit profile" event="AAAAAAFUAT04CZxwo24="/>
+					<trigger xmi:id="AAAAAAFUAT04CZxwo24=" name="edit profile" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATk53Zu5dw0=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATjt1ZtdcQ0=" target="AAAAAAFUATk40puUJhk=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAT1d7Jxznvk=" name="info edited" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yO3D8=" xmi:type="uml:Trigger" name="info edited" event="AAAAAAFUAT1d7Jxznvk="/>
+					<trigger xmi:id="AAAAAAFUAT1d7Jxznvk=" name="info edited" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATpBMZwKHL4=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATad65ok/Qs=" target="AAAAAAFUATnOYpvLDQE=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATpdxJwcYfg=" name="email sent" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fW5yPAQc=" xmi:type="uml:Trigger" name="email sent" event="AAAAAAFUATpdxJwcYfg="/>
+					<trigger xmi:id="AAAAAAFUATpdxJwcYfg=" name="email sent" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATqNlZwe5As=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATZuCpm3g7A=" target="AAAAAAFUATnOYpvLDQE=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATqurZwwVrA=" name="sign up complete" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fbJyQkhA=" xmi:type="uml:Trigger" name="sign up complete" event="AAAAAAFUATqurZwwVrA="/>
+					<trigger xmi:id="AAAAAAFUATqurZwwVrA=" name="sign up complete" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATriMZwy9cA=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATh6ipsm5E4=" target="AAAAAAFUATnOYpvLDQE=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATruaZxESM8=" name="log out" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fbJyRyFk=" xmi:type="uml:Trigger" name="log out" event="AAAAAAFUATruaZxESM8="/>
+					<trigger xmi:id="AAAAAAFUATruaZxESM8=" name="log out" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUATsa8ZxGwxE=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUATk40puUJhk=" target="AAAAAAFUATnOYpvLDQE=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUATsv1JxYi9U=" name="validation successful" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAT4fbJySwXI=" xmi:type="uml:Trigger" name="validation successful" event="AAAAAAFUATsv1JxYi9U="/>
+					<trigger xmi:id="AAAAAAFUATsv1JxYi9U=" name="validation successful" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

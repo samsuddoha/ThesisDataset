@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUAUSduv3mr5Q=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUAUBDePvyXZU=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUAUBDePvz78A=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUAUBoNvv5IkM=" name="Start" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUAUD63/wLmLU=" name="Signed in" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUEVCPwxzf8=" name="Reading inventory info" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUEnm/xneMc=" name="Reading info" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUEqe/ydLzs=" name="Reading item info" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUItf/z0QWg=" name="Validating" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUJkpP0sTIE=" name="Validating" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUK3lP1j87s=" name="Validating" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUOwrP2l1Wo=" visibility="public" xmi:type="uml:FinalState"/>
+				<transition xmi:id="AAAAAAFUAUEVW/xWmiw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUD63/wLmLU=" target="AAAAAAFUAUEVCPwxzf8=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUGirfzrD8w=" name="add inventory" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3nqHA=" xmi:type="uml:Trigger" name="add inventory" event="AAAAAAFUAUGirfzrD8w="/>
+					<trigger xmi:id="AAAAAAFUAUGirfzrD8w=" name="add inventory" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUEn3/yMe04=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUD63/wLmLU=" target="AAAAAAFUAUEnm/xneMc=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUHE3vzu+KY=" name="prepare register book" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3oE2Q=" xmi:type="uml:Trigger" name="prepare register book" event="AAAAAAFUAUHE3vzu+KY="/>
+					<trigger xmi:id="AAAAAAFUAUHE3vzu+KY=" name="prepare register book" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUEqufzC1pY=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUD63/wLmLU=" target="AAAAAAFUAUEqe/ydLzs=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUHpt/zxWjs=" name="update register book" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3pQ9s=" xmi:type="uml:Trigger" name="update register book" event="AAAAAAFUAUHpt/zxWjs="/>
+					<trigger xmi:id="AAAAAAFUAUHpt/zxWjs=" name="update register book" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUFNiPzTEDg=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUBoNvv5IkM=" target="AAAAAAFUAUD63/wLmLU=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUFYv/zlt+g=" name="sign in" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3qeGM=" xmi:type="uml:Trigger" name="sign in" event="AAAAAAFUAUFYv/zlt+g="/>
+					<trigger xmi:id="AAAAAAFUAUFYv/zlt+g=" name="sign in" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUIt9f0ZmW8=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUEVCPwxzf8=" target="AAAAAAFUAUItf/z0QWg=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAULciP2auA0=" name="validate info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3rJW4=" xmi:type="uml:Trigger" name="validate info" event="AAAAAAFUAULciP2auA0="/>
+					<trigger xmi:id="AAAAAAFUAULciP2auA0=" name="validate info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUJlHf1R104=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUEnm/xneMc=" target="AAAAAAFUAUJkpP0sTIE=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUL1wv2dnak=" name="validate info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3s0j8=" xmi:type="uml:Trigger" name="validate info" event="AAAAAAFUAUL1wv2dnak="/>
+					<trigger xmi:id="AAAAAAFUAUL1wv2dnak=" name="validate info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUK4AP2I1fA=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUEqe/ydLzs=" target="AAAAAAFUAUK3lP1j87s=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUMM9P2gw8k=" name="validate info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3tLU4=" xmi:type="uml:Trigger" name="validate info" event="AAAAAAFUAUMM9P2gw8k="/>
+					<trigger xmi:id="AAAAAAFUAUMM9P2gw8k=" name="validate info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUPIrP2qlNg=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUItf/z0QWg=" target="AAAAAAFUAUOwrP2l1Wo=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUPao/281EI=" name="inventory added" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3uBy0=" xmi:type="uml:Trigger" name="inventory added" event="AAAAAAFUAUPao/281EI="/>
+					<trigger xmi:id="AAAAAAFUAUPao/281EI=" name="inventory added" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUPq/P2+6Sk=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUJkpP0sTIE=" target="AAAAAAFUAUOwrP2l1Wo=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUQeMf3Q/z0=" name="register book creation completed" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3vP68=" xmi:type="uml:Trigger" name="register book creation completed" event="AAAAAAFUAUQeMf3Q/z0="/>
+					<trigger xmi:id="AAAAAAFUAUQeMf3Q/z0=" name="register book creation completed" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUQyY/3SwYQ=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUK3lP1j87s=" target="AAAAAAFUAUOwrP2l1Wo=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAURIZf3kxyU=" name="register book updated" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUSdyv3wrE8=" xmi:type="uml:Trigger" name="register book updated" event="AAAAAAFUAURIZf3kxyU="/>
+					<trigger xmi:id="AAAAAAFUAURIZf3kxyU=" name="register book updated" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

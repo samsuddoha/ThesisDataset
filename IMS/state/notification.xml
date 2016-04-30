@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUAU8OgwG0hHs=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUAUrbcf/6V0Y=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUAUrbcf/7i1Y=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUAUsSjQABE7Y=" name="Start" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUAUs7LAATK1A=" name="Signed in" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUtQaAA5xtI=" name="Receiving" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUtR8gBvhi4=" name="Writing" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUtVfQClC64=" name="Viewing history" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUxaegD9KNc=" name="Receiver selecting" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUz8xAE5kCE=" name="Sending" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAU4ymAFzIfo=" visibility="public" xmi:type="uml:FinalState"/>
+				<transition xmi:id="AAAAAAFUAUtQ4wBe/Jc=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUs7LAATK1A=" target="AAAAAAFUAUtQaAA5xtI=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUvLawDzEeY=" name="receive notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhgG1jIw=" xmi:type="uml:Trigger" name="receive notification" event="AAAAAAFUAUvLawDzEeY="/>
+					<trigger xmi:id="AAAAAAFUAUvLawDzEeY=" name="receive notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUtSVQCU/BY=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUs7LAATK1A=" target="AAAAAAFUAUtR8gBvhi4=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUvlzAD2n9c=" name="write notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhgG2Ofw=" xmi:type="uml:Trigger" name="write notification" event="AAAAAAFUAUvlzAD2n9c="/>
+					<trigger xmi:id="AAAAAAFUAUvlzAD2n9c=" name="write notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUtV5ADKP+o=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUs7LAATK1A=" target="AAAAAAFUAUtVfQClC64=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUv3rAD5PAo=" name="view history" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhgG3A6w=" xmi:type="uml:Trigger" name="view history" event="AAAAAAFUAUv3rAD5PAo="/>
+					<trigger xmi:id="AAAAAAFUAUv3rAD5PAo=" name="view history" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUuLfgDeoEs=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUsSjQABE7Y=" target="AAAAAAFUAUs7LAATK1A=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUuVigDwtac=" name="sign in" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhgG4KFc=" xmi:type="uml:Trigger" name="sign in" event="AAAAAAFUAUuVigDwtac="/>
+					<trigger xmi:id="AAAAAAFUAUuVigDwtac=" name="sign in" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUxbDwEihk8=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUtR8gBvhi4=" target="AAAAAAFUAUxaegD9KNc=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUynZgE27HU=" name="select receiver" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhgG5av0=" xmi:type="uml:Trigger" name="select receiver" event="AAAAAAFUAUynZgE27HU="/>
+					<trigger xmi:id="AAAAAAFUAUynZgE27HU=" name="select receiver" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUz9UwFeWzg=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUxaegD9KNc=" target="AAAAAAFUAUz8xAE5kCE=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAU0opAFw3g0=" name="send notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhgG6wBw=" xmi:type="uml:Trigger" name="send notification" event="AAAAAAFUAU0opAFw3g0="/>
+					<trigger xmi:id="AAAAAAFUAU0opAFw3g0=" name="send notification" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAU5EwQF4tVc=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUz8xAE5kCE=" target="AAAAAAFUAU4ymAFzIfo=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAU5X4QGKPxU=" name="notification sent" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhgG7rHA=" xmi:type="uml:Trigger" name="notification sent" event="AAAAAAFUAU5X4QGKPxU="/>
+					<trigger xmi:id="AAAAAAFUAU5X4QGKPxU=" name="notification sent" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAU5yLwGMQ9g=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUtQaAA5xtI=" target="AAAAAAFUAU4ymAFzIfo=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAU6HsQGeb20=" name="notification received" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhwG8nAA=" xmi:type="uml:Trigger" name="notification received" event="AAAAAAFUAU6HsQGeb20="/>
+					<trigger xmi:id="AAAAAAFUAU6HsQGeb20=" name="notification received" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAU6ZfgGgDsU=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUtVfQClC64=" target="AAAAAAFUAU4ymAFzIfo=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAU6uRQGyaRM=" name="history viewed" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAU8OhwG9TBQ=" xmi:type="uml:Trigger" name="history viewed" event="AAAAAAFUAU6uRQGyaRM="/>
+					<trigger xmi:id="AAAAAAFUAU6uRQGyaRM=" name="history viewed" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

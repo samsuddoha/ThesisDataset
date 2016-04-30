@@ -1,0 +1,84 @@
+		<?xml version="1.0" encoding="UTF-8"?>
+		<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" 
+		xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+			<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+			<uml:Model xmi:id="AAAAAAFUAW1Fngg2m3M=" xmi:type="uml:Model" name="RootModel">
+			<packagedElement xmi:id="AAAAAAFUAWdthQapZH4=" name="Collaboration1" visibility=
+			"public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" 
+			xmi:type="uml:Collaboration">
+			<ownedMember xmi:id="AAAAAAFUAWdthQaqFbw=" name="Interaction1" visibility="public" 
+			isReentrant="true" xmi:type="uml:Interaction">
+				<lifeline xmi:id="AAAAAAFUAWeAhAa5WPc=" name="User" visibility="public" 
+				xmi:type="uml:Lifeline" represents="AAAAAAFUAWeAdAa41ec="/>
+				<lifeline xmi:id="AAAAAAFUAWef6wbZCOY=" name="Requisition Slip" visibility
+				="public" xmi:type="uml:Lifeline" represents="AAAAAAFUAWef6wbYIdw="/>
+				<lifeline xmi:id="AAAAAAFUAWe+dwb5gG4=" name="Database" visibility="public" 
+				xmi:type="uml:Lifeline" represents="AAAAAAFUAWe+dwb49Ow="/>
+				<message xmi:id="AAAAAAFUAWgc6AcatMA=" name="select recommender" visibility=
+				"public" xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" 
+				receiveEvent="AAAAAAFUAW1Fngg4T/Y=" sendEvent="AAAAAAFUAW1Fngg36/8="/>
+				<message xmi:id="AAAAAAFUAWh4ewcw0Ew=" name="info lookup" visibility="public"
+				xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receive
+				Event="AAAAAAFUAW1Fngg6tG4=" sendEvent="AAAAAAFUAW1Fngg5yAM="/>
+				<message xmi:id="AAAAAAFUAWjsjwdHbHY=" name="done" visibility="public" xmi:
+				type="uml:Message" messageSort="reply" messageKind="complete" receiveEvent=
+				"AAAAAAFUAW1Fngg8soE=" sendEvent="AAAAAAFUAW1Fngg7F3I="/>
+				<message xmi:id="AAAAAAFUAWnIQwdeDW4=" name="send rs to recommender"
+				visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind
+				="complete" receiveEvent="AAAAAAFUAW1Fngg+L+8=" sendEvent="AAAAAAFUAW1Fngg9cGo="/>
+				<message xmi:id="AAAAAAFUAWo0sgd1Jgw=" name="successful" visibility="public"
+				xmi:type="uml:Message" messageSort="reply" messageKind="complete" receiveEvent=
+				"AAAAAAFUAW1FnghAZuQ=" sendEvent="AAAAAAFUAW1Fngg/kec="/>
+				<message xmi:id="AAAAAAFUAWqMLweLNxI=" name="recommend" visibility="public"
+				xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent
+				="AAAAAAFUAW1FnghC4oI=" sendEvent="AAAAAAFUAW1FnghBYRI="/>
+				<message xmi:id="AAAAAAFUAWrysgfB5eE=" name="done" visibility="public" xmi:type="
+				uml:Message" messageSort="reply" messageKind="complete" receiveEvent="
+				AAAAAAFUAW1FnghEmDk=" sendEvent="AAAAAAFUAW1FnghD/FI="/>
+				<message xmi:id="AAAAAAFUAWwVCQfckfI=" name="send rs to store in charge" 
+				visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind
+				="complete" receiveEvent="AAAAAAFUAW1FnghGbYQ=" sendEvent="AAAAAAFUAW1FnghFwvM="/>
+				<message xmi:id="AAAAAAFUAWxWhAfy0bI=" name="info lookup" visibility="public" xmi
+				:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent=
+				"AAAAAAFUAW1FrghITIg=" sendEvent="AAAAAAFUAW1FnghHUV8="/>
+				<message xmi:id="AAAAAAFUAWyrvQgJSmw=" name="done" visibility="public" xmi:type
+				="uml:Message" messageSort="reply" messageKind="complete" receiveEvent="
+				AAAAAAFUAW1FrghKwI4=" sendEvent="AAAAAAFUAW1FrghJzjg="/>
+				<message xmi:id="AAAAAAFUAWz/wgggrXc=" name="successful" visibility="public"
+				xmi:type="uml:Message" messageSort="reply" messageKind="complete" receiveEvent
+				="AAAAAAFUAW1FrghMnt0=" sendEvent="AAAAAAFUAW1FrghLkU0="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg36/8=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWeAhAa5WPc="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg4T/Y=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg5yAM=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg6tG4=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWe+dwb5gG4="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg7F3I=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWe+dwb5gG4="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg8soE=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWeAhAa5WPc="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg9cGo=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWeAhAa5WPc="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg+L+8=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1Fngg/kec=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1FnghAZuQ=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWeAhAa5WPc="/>
+				<fragment xmi:id="AAAAAAFUAW1FnghBYRI=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWeAhAa5WPc="/>
+				<fragment xmi:id="AAAAAAFUAW1FnghC4oI=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1FnghD/FI=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1FnghEmDk=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWeAhAa5WPc="/>
+				<fragment xmi:id="AAAAAAFUAW1FnghFwvM=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWeAhAa5WPc="/>
+				<fragment xmi:id="AAAAAAFUAW1FnghGbYQ=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1FnghHUV8=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1FrghITIg=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWe+dwb5gG4="/>
+				<fragment xmi:id="AAAAAAFUAW1FrghJzjg=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWe+dwb5gG4="/>
+				<fragment xmi:id="AAAAAAFUAW1FrghKwI4=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1FrghLkU0=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWef6wbZCOY="/>
+				<fragment xmi:id="AAAAAAFUAW1FrghMnt0=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUAWeAhAa5WPc="/>
+			</ownedMember>
+			<ownedAttribute xmi:id="AAAAAAFUAWeAdAa41ec=" name="Role1" visibility="public" isStatic="false" isLeaf="false" 
+			isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" 
+			isID="false"/>
+			<ownedAttribute xmi:id="AAAAAAFUAWef6wbYIdw=" name="Role2" visibility="public" isStatic="false" isLeaf="false"
+			isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" 
+			isID="false"/>
+			<ownedAttribute xmi:id="AAAAAAFUAWe+dwb49Ow=" name="Role3" visibility="public" isStatic="false"
+			isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" 
+			aggregation="none" isDerived="false" isID="false"/>
+			</packagedElement>
+			</uml:Model>
+		</xmi:XMI>

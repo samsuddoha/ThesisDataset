@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUYVElCar8bcI=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUYU8kYan0PXY=" name="Collaboration1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Collaboration">
+			<ownedMember xmi:id="AAAAAAFUYU8kYan1DSk=" name="Interaction1" visibility="public" isReentrant="true" xmi:type="uml:Interaction">
+				<lifeline xmi:id="AAAAAAFUYU8wjaoEOc8=" name="applicant" visibility="public" xmi:type="uml:Lifeline" represents="AAAAAAFUYU8wjaoDMDI="/>
+				<lifeline xmi:id="AAAAAAFUYU9CYaokhfA=" name="system" visibility="public" xmi:type="uml:Lifeline" represents="AAAAAAFUYU9CYKojXdQ="/>
+				<lifeline xmi:id="AAAAAAFUYU9WOKpErBg=" name="system admin" visibility="public" xmi:type="uml:Lifeline" represents="AAAAAAFUYU9WOKpDrsQ="/>
+				<lifeline xmi:id="AAAAAAFUYU9xOqpkUGU=" name="general user" visibility="public" xmi:type="uml:Lifeline" represents="AAAAAAFUYU9xOqpjOcc="/>
+				<message xmi:id="AAAAAAFUYU+VE6qDK+g=" name="process notification" visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent="AAAAAAFUYVElCqr+4sA=" sendEvent="AAAAAAFUYVElCqr9g+Y="/>
+				<message xmi:id="AAAAAAFUYU/C6KqZyrY=" name="notify" visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent="AAAAAAFUYVElC6sAiv8=" sendEvent="AAAAAAFUYVElC6r/T4Y="/>
+				<message xmi:id="AAAAAAFUYVB0jKrQJTk=" name="processed" visibility="public" xmi:type="uml:Message" messageSort="reply" messageKind="complete" receiveEvent="AAAAAAFUYVElC6sCmaw=" sendEvent="AAAAAAFUYVElC6sBecs="/>
+				<message xmi:id="AAAAAAFUYVCgtqrm1I4=" name="notify general user for new applicant" visibility="public" xmi:type="uml:Message" messageSort="synchCall" messageKind="complete" receiveEvent="AAAAAAFUYVElC6sEblo=" sendEvent="AAAAAAFUYVElC6sDECE="/>
+				<fragment xmi:id="AAAAAAFUYVElCqr9g+Y=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYU8wjaoEOc8="/>
+				<fragment xmi:id="AAAAAAFUYVElCqr+4sA=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYU9CYaokhfA="/>
+				<fragment xmi:id="AAAAAAFUYVElC6r/T4Y=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYU9CYaokhfA="/>
+				<fragment xmi:id="AAAAAAFUYVElC6sAiv8=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYU9WOKpErBg="/>
+				<fragment xmi:id="AAAAAAFUYVElC6sBecs=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYU9WOKpErBg="/>
+				<fragment xmi:id="AAAAAAFUYVElC6sCmaw=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYU9CYaokhfA="/>
+				<fragment xmi:id="AAAAAAFUYVElC6sDECE=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYU9CYaokhfA="/>
+				<fragment xmi:id="AAAAAAFUYVElC6sEblo=" xmi:type="uml:OccurrenceSpecification" covered="AAAAAAFUYU9xOqpkUGU="/>
+			</ownedMember>
+			<ownedAttribute xmi:id="AAAAAAFUYU8wjaoDMDI=" name="Role1" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+			<ownedAttribute xmi:id="AAAAAAFUYU9CYKojXdQ=" name="Role2" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+			<ownedAttribute xmi:id="AAAAAAFUYU9WOKpDrsQ=" name="Role3" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+			<ownedAttribute xmi:id="AAAAAAFUYU9xOqpjOcc=" name="Role4" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>

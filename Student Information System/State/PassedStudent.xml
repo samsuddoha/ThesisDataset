@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFUAUbM8ATkZJg=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model"/>
+		<packagedElement xmi:id="AAAAAAFUAT9n2AL1qQA=" name="StateMachine1" visibility="public" isReentrant="true" xmi:type="uml:StateMachine">
+			<region xmi:id="AAAAAAFUAT9n2AL2I8k=" visibility="public" xmi:type="uml:Region">
+				<subvertex xmi:id="AAAAAAFUAT+DlgL8WVU=" visibility="public" xmi:type="uml:Pseudostate" kind="initial"/>
+				<subvertex xmi:id="AAAAAAFUAT/JUQMNIeY=" name="Req.Viewed" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUAviAMzc/o=" name="InformationAdded" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUDCdgNcHSU=" name="ProfileUpdated" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUEcPAOD+NQ=" name="VerificationWait" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUG4VAOtZRE=" name="MessageSent" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUH/ugPU2QE=" name="RequestSent" visibility="public" xmi:type="uml:State"/>
+				<subvertex xmi:id="AAAAAAFUAUUYggR5TW4=" visibility="public" xmi:type="uml:FinalState"/>
+				<transition xmi:id="AAAAAAFUAUKgtQP8DLE=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAT+DlgL8WVU=" target="AAAAAAFUAT/JUQMNIeY=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAULpkgQONxM=" name="Send Viewing Req." visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUbNAATlags=" xmi:type="uml:Trigger" name="Send Viewing Req." event="AAAAAAFUAULpkgQONxM="/>
+					<trigger xmi:id="AAAAAAFUAULpkgQONxM=" name="Send Viewing Req." visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUMhmgQRc5Q=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAT+DlgL8WVU=" target="AAAAAAFUAUAviAMzc/o=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUNiUwQj3eU=" name="Add Career Info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUbNAQTmVzc=" xmi:type="uml:Trigger" name="Add Career Info" event="AAAAAAFUAUNiUwQj3eU="/>
+					<trigger xmi:id="AAAAAAFUAUNiUwQj3eU=" name="Add Career Info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUOqfwQmAMs=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAT+DlgL8WVU=" target="AAAAAAFUAUDCdgNcHSU=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUPaCQQ4LRY=" name="Add New Info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUbNAQTnamg=" xmi:type="uml:Trigger" name="Add New Info" event="AAAAAAFUAUPaCQQ4LRY="/>
+					<trigger xmi:id="AAAAAAFUAUPaCQQ4LRY=" name="Add New Info" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUQSVwQ7h0M=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAT+DlgL8WVU=" target="AAAAAAFUAUEcPAOD+NQ=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUQyowRN6CM=" name="Post News" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUbNAQToQbk=" xmi:type="uml:Trigger" name="Post News" event="AAAAAAFUAUQyowRN6CM="/>
+					<trigger xmi:id="AAAAAAFUAUQyowRN6CM=" name="Post News" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAURI6wRPNSw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAT+DlgL8WVU=" target="AAAAAAFUAUG4VAOtZRE=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUR3fwRhKRQ=" name="Correction Mesage" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUbNAQTpU8Q=" xmi:type="uml:Trigger" name="Correction Mesage" event="AAAAAAFUAUR3fwRhKRQ="/>
+					<trigger xmi:id="AAAAAAFUAUR3fwRhKRQ=" name="Correction Mesage" visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUSxKQRkmHo=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAT+DlgL8WVU=" target="AAAAAAFUAUH/ugPU2QE=" kind="external">
+					<ownedMember xmi:id="AAAAAAFUAUTvkwR2rKA=" name="Event Creation Req." visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+					<trigger xmi:id="AAAAAAFUAUbNAQTqK5c=" xmi:type="uml:Trigger" name="Event Creation Req." event="AAAAAAFUAUTvkwR2rKA="/>
+					<trigger xmi:id="AAAAAAFUAUTvkwR2rKA=" name="Event Creation Req." visibility="public" xmi:type="uml:AnyReceiveEvent"/>
+				</transition>
+				<transition xmi:id="AAAAAAFUAUVIBgR+Wlw=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAT/JUQMNIeY=" target="AAAAAAFUAUUYggR5TW4=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUV4dASPQEQ=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUAviAMzc/o=" target="AAAAAAFUAUUYggR5TW4=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUWO0ASgw0M=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUDCdgNcHSU=" target="AAAAAAFUAUUYggR5TW4=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUWjtASxKuo=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUEcPAOD+NQ=" target="AAAAAAFUAUUYggR5TW4=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUW3JATCGlo=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUG4VAOtZRE=" target="AAAAAAFUAUUYggR5TW4=" kind="external"/>
+				<transition xmi:id="AAAAAAFUAUXRNQTTXjc=" visibility="public" xmi:type="uml:Transition" source="AAAAAAFUAUH/ugPU2QE=" target="AAAAAAFUAUUYggR5TW4=" kind="external"/>
+			</region>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>
